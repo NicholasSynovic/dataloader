@@ -2,6 +2,7 @@ from abc import ABCMeta, abstractmethod
 from typing import Protocol, runtime_checkable
 
 from pandas import DataFrame
+from typedframe import TypedDataFrame
 
 
 @runtime_checkable
@@ -12,11 +13,12 @@ class LoaderProtocol(Protocol):
     """
 
     name: str
+    dfSchema: TypedDataFrame
 
-    df: DataFrame
-    trainingDF: DataFrame
-    validationDF: DataFrame
-    testingDF: DataFrame
+    df: DataFrame | None
+    trainingDF: DataFrame | None
+    validationDF: DataFrame | None
+    testingDF: DataFrame | None
 
 
 class LoaderABC(LoaderProtocol, metaclass=ABCMeta):
