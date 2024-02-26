@@ -1,11 +1,14 @@
 # Dataloader
 
->  Python library to handle loading data from different sources for machine and deep learning pipelines 
+> Python library to handle loading data from different sources for machine and
+> deep learning pipelines
 
 ## About
 
-This library simplifies machine and deep learning pipelines by migrating data from platform-specific implementations into a generic, intermediate representation (IR).
-This IR can then be exported as a structured file or as a library-specific data handler.
+This library simplifies machine and deep learning pipelines by migrating data
+from platform-specific implementations into a generic, intermediate
+representation (IR). This IR can then be exported as a structured file or as a
+library-specific data handler.
 
 ## How to Install
 
