@@ -369,6 +369,21 @@ files = [
 ]
 
 [[package]]
+name = "typedframe"
+version = "0.11.0"
+description = "Typed Wrappers over Pandas and Polars DataFrames with schema validation"
+optional = false
+python-versions = "*"
+files = [
+    {file = "typedframe-0.11.0-py3-none-any.whl", hash = "sha256:d38ed1206072c5953e846be6e29fce0f657a82de3937023292bd2a9ffd8d4832"},
+    {file = "typedframe-0.11.0.tar.gz", hash = "sha256:d77c12369a0954a305f2e912c433367235d36c61d2f3b37090a8ad6ec4285443"},
+]
+
+[package.extras]
+pandas = ["numpy", "pandas"]
+polars = ["polars", "pyarrow"]
+
+[[package]]
 name = "tzdata"
 version = "2024.1"
 description = "Provider of IANA time zone data"
@@ -382,4 +397,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "2237a460ceef6e3fa9e223832882dd5f1f79928f61a3bfa666a55a6b2a7a98d2"
+content-hash = "f3ceaacd61cd49bf78a5d2b2f4e46d593d45c67e2649253ee702ae729317fa7d"
